@@ -1,0 +1,7 @@
+SELECT DISTINCT @ID normalized_name, "FORD" make, Final_Parameters.Year year, Final_Parameters.Model model, Final_Parameters.Module_Protocol protocol, "Alternate Acronym" externalID, Unit unit, QuantityType type, Offset offset, Multiplier multiplier, Divisor divisor, FromValue fromValue, ToValue toValue, UnitMultiplier unitMultiplier, [Module Address] ecuAddress, ModuleName ecu, 22 mode,
+"HexAddress" pid, HexMask 'mask', shift, size
+FROM Final_Parameters
+INNER JOIN "Final_Parameter Converters" ON Final_Parameters.ConverterName = "Final_Parameter Converters".ConverterName
+INNER JOIN [Final_Module List] ON ([Final_Module List].VehicleID = Final_Parameters.VehicleID AND [Final_Module List].ModuleType = Final_Parameters.ModuleName)
+WHERE `Alternate Acronym` like @extID
+

@@ -1,0 +1,4745 @@
+
+BEGIN TRANSACTION;
+
+DROP TABLE IF EXISTS ecu_address;
+
+CREATE TABLE ecu_address (
+    Classification,
+    [Name of System],
+    Address,
+    ECU_ID,
+    [Data Monitor Function]
+);
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'Engine and ECT',
+                            '$13,$10,$6A',
+                            '1',
+                            'O *8'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'ECD',
+                            '$13,$6A',
+                            '97',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'Engine R',
+                            '$15.00',
+                            '50',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'STOP AND GO',
+                            '$15.00',
+                            '6',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'EV',
+                            '$16.00',
+                            '93',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'Hybrid Control',
+                            '$16.00',
+                            '2',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'Battery',
+                            '$D5',
+                            '128',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'HV Battery',
+                            '$D5',
+                            '3',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'ECT',
+                            '$19.00',
+                            '354',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'Sequential M/T',
+                            '$19.00',
+                            '4',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'Multi-Mode MT',
+                            '$19.00',
+                            '92',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'FREE-TRONIC',
+                            '$19.00',
+                            '94',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'Cruise Control',
+                            '$13,$10,$6A',
+                            '55',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'Cruise Control',
+                            '$16.00',
+                            '90',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'Cruise Control',
+                            '$13,$10,$6A',
+                            '91',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'Laser Cruise',
+                            '$13,$10,$6A',
+                            '89',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'C',
+                            'ABS/TRC/VSC',
+                            '$29.00',
+                            '8',
+                            'O *57'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'C',
+                            'AHC/EMS/AIRSUS',
+                            '$38.00',
+                            '12',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'C',
+                            'EHPS/EMPS',
+                            '$32.00',
+                            '13',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'C',
+                            'VGRS',
+                            '$34.00',
+                            '14',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'C',
+                            'TIRE　PRESS　WARN',
+                            '$2A',
+                            '42',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'C',
+                            'KDSS',
+                            '$3B',
+                            '127',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'C',
+                            'Stabilizer',
+                            '$37.00',
+                            '143',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'BODY/GATEWAY',
+                            '$40.00',
+                            '16',
+                            'O *47,*49'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'BODY/GATEWAY',
+                            '$40.00',
+                            '47',
+                            'O *47,*49'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'GATEWAY',
+                            '$52.00',
+                            '75',
+                            'O *50'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'BODY No.2',
+                            '$43.00',
+                            '17',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'BODY No.2',
+                            '$43.00',
+                            '49',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'AIR CONDITIONER',
+                            '$98.00',
+                            '18',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Combination Meter',
+                            '$62.00',
+                            '19',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'TILT&TELESCO',
+                            '$A8',
+                            '20',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'D-DOOR',
+                            '$A1',
+                            '21',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'P-DOOR',
+                            '$A2',
+                            '22',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'RR-DOOR',
+                            '$A4',
+                            '23',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'RL-DOOR',
+                            '$A7',
+                            '24',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'BACK-DOOR',
+                            '$B9',
+                            '25',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'MASTER SW',
+                            '$EC',
+                            '53',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'TDS',
+                            '$E0',
+                            '26',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'SMART',
+                            '$B5',
+                            '58',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Body No.3',
+                            '$4C',
+                            '27',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Body No.3',
+                            '$4C',
+                            '48',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Body No.4',
+                            '$4F',
+                            '28',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'SLIDE ROOF',
+                            '$AD',
+                            '29',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'STEERING PAD',
+                            '$49.00',
+                            '30',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'COMBI SW',
+                            '$B3',
+                            '31',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'IMMOBILISER',
+                            '$13,$10,$6A',
+                            '54',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'IMMOBILISER/STEERING　LOCK',
+                            '$C1',
+                            '32',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'D-SEAT',
+                            '$AB',
+                            '33',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'P-SEAT',
+                            '$80.00',
+                            '34',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'RR-SEAT',
+                            '$83.00',
+                            '35',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'RL-SEAT',
+                            '$85.00',
+                            '36',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'REAR-SEAT　SW',
+                            '$86.00',
+                            '37',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'BODY　No.5',
+                            '$51.00',
+                            '38',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'RAIN　SENSER',
+                            '$B0',
+                            '39',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'CLEARANCE　SONER',
+                            '$67.00',
+                            '40',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'RTRCTBL　HARDTOP',
+                            '$BC',
+                            '41',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'MIRROR/MIRROR-R',
+                            '$AE',
+                            '43',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'MIRROR-L',
+                            '$DF',
+                            '44',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'WIPER',
+                            '$D6',
+                            '45',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'SRS　AIRBAG',
+                            '$58.00',
+                            '15',
+                            '-'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'AFS',
+                            '$70.00',
+                            '51',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'OCCUPANT DETECTION',
+                            '$5B',
+                            '59',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'PRE-CRASH ',
+                            '$5D',
+                            '52',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'IG_CTRL',
+                            '$E9',
+                            '57',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'D-SEAT SW',
+                            '$DC',
+                            '117',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Night View',
+                            '$68.00',
+                            '98',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'P Master Switch',
+                            '$A2',
+                            '296',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'P_CTRL',
+                            '$1C',
+                            '56',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'ENGINE　AND　ECT',
+                            '$13,$10（$7E0）',
+                            '61',
+                            'O *8'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'ENGINE　AND　ECT',
+                            '$13,$10（$7E0）',
+                            '234',
+                            'O *8'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'Engine',
+                            'q  ',
+                            '371',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'TCCS2',
+                            '$15($7E4)',
+                            '302',
+                            'O *8'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'ECT',
+                            '$19（$7E1）',
+                            '64',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'ECT',
+                            '$19（$7E1）',
+                            '235',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'MMT',
+                            '$19（$7E1）',
+                            '158',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'ASG',
+                            '$7E1',
+                            '312',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'HV　ECU',
+                            '$16（$7E2）',
+                            '60',
+                            'O *55'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'HV　ECU',
+                            '$16（$7E2）',
+                            '236',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'EV',
+                            '$7D2',
+                            '327',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'HV　BATTERY',
+                            '$D5（$7E3）',
+                            '62',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'HV　BATTERY',
+                            '$D5（$7E3）',
+                            '268',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'EV　BATTERY',
+                            '$747.00',
+                            '346',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'Plug-in Control (EV)',
+                            '$745.00',
+                            '315',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'Plug-in Control (HV)',
+                            '$7E7',
+                            '316',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'E-ACM',
+                            '$723.00',
+                            '168',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'RADAR/LASER CCS',
+                            '$13,$10（$7E0）',
+                            '74',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'RADAR/LASER CCS',
+                            '$13,$10（$7E0）',
+                            '239',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'CCS',
+                            '$13,$10（$7E0）',
+                            '76',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'CCS',
+                            '$13,$10（$7E0）',
+                            '237',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'CCS',
+                            '$7E2',
+                            '88',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'CCS',
+                            '$7E2',
+                            '238',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'RADAR CCS',
+                            '$7E2',
+                            '129',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'RADAR CCS',
+                            '$7E2',
+                            '301',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'C',
+                            'ABS/TRC/VSC',
+                            '$7B0',
+                            '105',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'C',
+                            'ABS/TRC/VSC',
+                            '$7B0
+*147',
+                            '425',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'C',
+                            '4WD',
+                            '$7B1',
+                            '118',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'C',
+                            'IPA',
+                            '$7A2',
+                            '85',
+                            'O *56, *66'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'C',
+                            'EMPS',
+                            '$7A1',
+                            '142',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'SRS　AIRBAG',
+                            '$58.00',
+                            '63',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'A/C',
+                            '$7C4',
+                            '121',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Meter',
+                            '$7C0',
+                            '122',
+                            'O *135'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Main Body',
+                            '$750（$40）',
+                            '123',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'D-Door Motor',
+                            '$750（$90）',
+                            '124',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Entry & Start',
+                            '$750（$B5）',
+                            '125',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Accessory Gateway',
+                            '$750（$C8）',
+                            '126',
+                            '- *119'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'RR-Door Motor',
+                            '$750（$91）',
+                            '144',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'RR-Door Motor',
+                            '$750（$92）',
+                            '145',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'RL-Door Motor',
+                            '$750（$93）',
+                            '146',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Sliding Roof',
+                            '$750（$AD）',
+                            '147',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'SlidingSunshade',
+                            '$750（$AC）',
+                            '370',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Master Switch',
+                            '$750（$EC）',
+                            '148',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Gateway CAN',
+                            '$750（$52）',
+                            '150',
+                            '-'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Back Door',
+                            '$750（$B8）',
+                            '159',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Rear Left Door',
+                            '$750（$A7）',
+                            '160',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Rear Right Door',
+                            '$750（$A4）',
+                            '161',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Driver Seat',
+                            '$750（$AB）',
+                            '162',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Passenger Seat',
+                            '$750（$80）',
+                            '163',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'T&T',
+                            '$750（$A8）',
+                            '164',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'AFS / HL AutoLeveling/AHS',
+                            '$750($70)
+AutoLeveling is $70',
+                            '165',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'HL AutoLeveling',
+                            '$750（$70）',
+                            '350',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'HL AutoLeveling',
+                            '$70.00',
+                            '351',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'HL AutoLeveling',
+                            '$750（$70）',
+                            '361',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'HV Gateway',
+                            '$750（$53）',
+                            '166',
+                            '-'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'TDS',
+                            '$750（$E0）',
+                            '167',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Mirror / Driver Door',
+                            '$750($A1)',
+                            '169',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Intuitive P/A',
+                            '$750($67)',
+                            '170',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Electric Power Control',
+                            '$7C1',
+                            '202',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'C',
+                            'TPWS',
+                            '$750($2A)',
+                            '203',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'PCS WIL R',
+                            '$750($3E)',
+                            '204',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'PCS WIL L',
+                            '$750($3F)',
+                            '205',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Passenger Door',
+                            '$750($A2)',
+                            '179',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Rear Right Seat',
+                            '$750($83)',
+                            '182',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Rear Left Seat',
+                            '$750($85)',
+                            '183',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'C',
+                            'EPB',
+                            '$750($2C)',
+                            '184',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'ECM Gateway',
+                            '$750($54)',
+                            '185',
+                            '-'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'ECB Gateway',
+                            '$750($55)',
+                            '186',
+                            '-'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'WIL Gateway',
+                            '$750($56)',
+                            '187',
+                            '-'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'SRS Airbag',
+                            '$780.00',
+                            '188',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'D-SEAT SW',
+                            '$750($DC)',
+                            '181',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Center Console Switch',
+                            '$750($DD)',
+                            '190',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Rear Console Switch',
+                            '$750($DE)',
+                            '191',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Front Right Seat A/C',
+                            '$750($8A)',
+                            '192',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Front Left Seat A/C',
+                            '$750($8B)',
+                            '193',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Front Right Seat A/C',
+                            '$750($8C)',
+                            '194',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Rear Left Seat A/C',
+                            '$750($8D)',
+                            '195',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Pre-Collision',
+                            '$781.00',
+                            '196',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'C',
+                            'Air suspension',
+                            '$750($38)',
+                            '171',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'RADAR CCS',
+                            '$790.00',
+                            '197',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Pre-Crash 2',
+                            '$750($02)',
+                            '208',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'C',
+                            'Lane Keeping Assist',
+                            '$750($02)',
+                            '207',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'C',
+                            'Front Stabilizer',
+                            '$750($39)',
+                            '153',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'C',
+                            'Rear Stabilizer',
+                            '$750($3A)',
+                            '154',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Rain Sensor',
+                            '$750($B0)',
+                            '199',
+                            'O *146'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Body No.4',
+                            '$750($4F)',
+                            '200',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Body No.5',
+                            '$750($51)',
+                            '201',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Combination Switch',
+                            '$750($DB)',
+                            '180',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Steering Pad Switch',
+                            '$750($DA)',
+                            '174',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'Engine',
+                            '$7E0',
+                            '206',
+                            'O *8'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Mayday Gateway',
+                            '$750($5A)',
+                            '209',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Back Door P/W',
+                            '$750（$B9）',
+                            '176',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Starting Control',
+                            '$7B4',
+                            '221',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Remote Engine Starter',
+                            '$750（$B6）',
+                            '219',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Power Source Control',
+                            '$750($E9)',
+                            '223',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Charging Control',
+                            '$7B2',
+                            '222',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'CAN Gateway V',
+                            '$59($750)',
+                            '230',
+                            '-'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Night View',
+                            '$60($750)',
+                            '231',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'Stop and Go',
+                            '$726.00',
+                            '227',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'PM1 Gateway',
+                            '$750($57)',
+                            '217',
+                            '-'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'P_CTRL',
+                            '$727.00',
+                            '232',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'PM2 Gateway',
+                            '$750($58)',
+                            '218',
+                            '-'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Telematics',
+                            '$C7,$750($C7)',
+                            '233',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Navigation System',
+                            '$7D0',
+                            '212',
+                            '-　*9'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Mirror R/Front Right Door',
+                            '$750（$A5）',
+                            '224',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Mirror L/Front Left Door',
+                            '$750（$A6）',
+                            '225',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Pre-Crash 2',
+                            '$791.00',
+                            '220',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Immobiliser',
+                            '$C1',
+                            '260',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'FC',
+                            '$7D1',
+                            '228',
+                            '-'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'FCHV',
+                            '$7D2',
+                            '229',
+                            '-'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'C',
+                            'KDSS',
+                            '$750($3B)',
+                            '267',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Active Rear Wing',
+                            '$750($F3)',
+                            '308',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Blind Spot Monitor Master',
+                            '$750($41)',
+                            '313',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Blind Spot Monitor Slave',
+                            '$750($42)',
+                            '314',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Multi Bus Gateway',
+                            '$750($5C)',
+                            '339',
+                            '-'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Multi Bus Monitor1',
+                            '$750($71)',
+                            '340',
+                            '-'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Multi Bus Monitor2',
+                            '$750($72)',
+                            '341',
+                            '-'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'VehicleControl',
+                            '$54.00',
+                            '342',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Grill Shutter',
+                            '$750($EB)',
+                            '352',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'C',
+                            'Panoramic View Monitor',
+                            '$750($7B)',
+                            '353',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'C',
+                            'VGRS',
+                            '$7A3',
+                            '345',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'C',
+                            'DRS',
+                            '$744.00',
+                            '344',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'C',
+                            'Lane Departure Alert',
+                            '$750($7A)',
+                            '355',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'CCS',
+                            '$7D2',
+                            '358',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Vehicle Proximity Notification',
+                            '$D3',
+                            '359',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'VehicleProximityNotification',
+                            '$750($D3)',
+                            '393',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'EP Systems',
+                            '$7D2',
+                            '360',
+                            '-'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'CCS',
+                            '$750($01)',
+                            '362',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'P4WD',
+                            '$741.00',
+                            '363',
+                            'O *141'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'ASC',
+                            '$750($8E)',
+                            '365',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'AHB',
+                            '$750（$70）',
+                            '368',
+                            '-'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'AHB(12PF)',
+                            '$750（$7C）',
+                            '369',
+                            '-'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'C',
+                            'CSP Sensor',
+                            '$750（$44）',
+                            '376',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'FC',
+                            '$7D1',
+                            '378',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'FCHV',
+                            '$7D2',
+                            '379',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'FCDC',
+                            '$7D3',
+                            '380',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Reverse Wiper',
+                            '$750（$26）',
+                            '384',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'Plug-in Control (FC)',
+                            '$745.00',
+                            '385',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'C',
+                            'Front Recognition Camera',
+                            '$750（$6D）',
+                            '386',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Road Sign Assist',
+                            '$750（$79）',
+                            '387',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Head Up Display',
+                            '$750（$69）',
+                            '390',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'AT',
+                            '$7E1',
+                            '565',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'C',
+                            'ABS/TRC/VSC',
+                            '$29.00',
+                            '509',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'C',
+                            'TVD',
+                            '$742.00',
+                            '377',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'C',
+                            'Trailer Brake Controller',
+                            '$750（$2B）',
+                            '381',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Central Gateway',
+                            '$750（$5F）',
+                            '382',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Celing Illumination',
+                            '$750（$A0）',
+                            '383',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'CCS (BMW engine)',
+                            '$7E0',
+                            '391',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'OCCUPANT DETECTION',
+                            '$750($5B)',
+                            '394',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Pedestrian Protection',
+                            '$750($30)',
+                            '404',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'AFS (Sub)',
+                            '$750($1E)',
+                            '413',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'HL AutoLeveling (Sub)',
+                            '$750($1E)',
+                            '414',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'C',
+                            'Steering Angle Sensor',
+                            '$7B3',
+                            '417',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'ENGINE　AND　ECT',
+                            'Request: $6A8
+Response: $688',
+                            '149',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Audio System',
+                            '$54.00',
+                            '357',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'A/C',
+                            'Request: $76D
+Response: $66D',
+                            '824',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'Engine',
+                            'Request: $6A8
+Response: $688',
+                            '825',
+                            'O *138'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'Engine (EDC17)',
+                            'Request:$6A8
+Response:$688',
+                            '801',
+                            'O *128'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'Engine (DCM3.5)',
+                            'Request:$6A8
+Response:$688',
+                            '803',
+                            'O *128'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'ECT',
+                            'Request:$6A9
+Response:$689',
+                            '804',
+                            'O *128'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'C',
+                            'ABS/TRC/VSC',
+                            'Request:$6AD
+Response:$68D',
+                            '805',
+                            'O *128'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'c',
+                            'Tyre Under-Inflation Detection(DSG)',
+                            'Request:$6AF
+Response:$68F',
+                            '820',
+                            'O *128'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'BSI',
+                            'Request:$752
+Response:$652',
+                            '802',
+                            'O *134'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Traller relay unit(BSR)',
+                            'Request:$752
+Response:$652',
+                            '806',
+                            'O *134'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Bodywork conversion unit',
+                            'Request:$752
+Response:$652',
+                            '807',
+                            'O *134'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Engine relay unit(BSM)',
+                            'Request:$752
+Response:$652',
+                            '808',
+                            'O *134'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Driver and passenger airbags',
+                            'Request:$744
+Response:$644',
+                            '809',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Instrument Panel',
+                            'Request：$75F
+Response：$65F',
+                            '810',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Switch Module under the Steering Wheel',
+                            'Request：$742
+Response：$642',
+                            '811',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Multifunction Display',
+                            'Request：$765
+Response：$665',
+                            '812',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Radio or Radiotelephone(Radio Part)',
+                            'Request：$760
+Response：$660',
+                            '813',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Rain and Brightness Sensor',
+                            'Request：$74A
+Response：$64A',
+                            '814',
+                            '-'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Power Steering Electric Pump Unit',
+                            'Request：$6B5
+Response：$695',
+                            '815',
+                            'O *128'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Additional Heating',
+                            '$1.00',
+                            '816',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Anti-theft alarm',
+                            'Request：$75C
+Response：$65C',
+                            '817',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'High Frequency Receiver',
+                            'Request：$746
+Response：$646',
+                            '818',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Heating Ventilation',
+                            'Request：$76D
+Response：$66D',
+                            '821',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Anti-slip Mode Selecter',
+                            'Request：$6BD
+Response：$69D',
+                            '822',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Battery Charge Status Unit',
+                            'Request：$6C4
+Response：$604',
+                            '823',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Navigation unit for RT6（Telematics）',
+                            'Request：$764
+Response：$664',
+                            '826',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'ENGINE',
+                            '-',
+                            '130',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'ECT',
+                            '-',
+                            '132',
+                            '-'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'C',
+                            'CCS',
+                            '-',
+                            '133',
+                            '-'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'C',
+                            'EMS',
+                            '-',
+                            '134',
+                            '-'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'C',
+                            'AIR SUSPENSION',
+                            '-',
+                            '135',
+                            'O *35'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'C',
+                            'TRAC',
+                            '-',
+                            '136',
+                            '-'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'AIR CONDITIONER',
+                            '-',
+                            '140',
+                            '-'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'SRS AIRBAG',
+                            '-',
+                            '138',
+                            '-'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Side Airbag',
+                            '-',
+                            '137',
+                            '-'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'IMMOBILISER',
+                            '-',
+                            '141',
+                            '-'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'C',
+                            'AIR SUSPENSION',
+                            '-',
+                            '173',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'ENGINE',
+                            '-',
+                            '156',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'C',
+                            'ABS',
+                            '-',
+                            '157',
+                            '-'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'CARB_ECU',
+                            '-',
+                            '900',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'CARB_ECU',
+                            '-',
+                            '916',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'Engine',
+                            '$10.00',
+                            '99',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            '',
+                            'ECT',
+                            '$18.00',
+                            '100',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'C',
+                            'ABS',
+                            '$29.00',
+                            '101',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'SRS　AIRBAG',
+                            '$58.00',
+                            '102',
+                            '-'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'IMMOBILISER',
+                            '$C1',
+                            '103',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'C',
+                            'EMPS',
+                            '$32.00',
+                            '317',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'Engine',
+                            '$7E0',
+                            '701',
+                            'O *8'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'ECT',
+                            '$7E1',
+                            '702',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'C',
+                            'EMPS',
+                            '$7A1',
+                            '711',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'C',
+                            'TPWS',
+                            '$750($2A)',
+                            '712',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'CCS',
+                            '$7E0',
+                            '715',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Meter',
+                            '$7C0',
+                            '716',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Power Source Control',
+                            '$750($E9)',
+                            '717',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Main Body',
+                            '$750（$40）',
+                            '713',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'A/C',
+                            '$7C4',
+                            '714',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Entry & Start',
+                            '$750（$B5）',
+                            '704',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'SRS',
+                            '$780.00',
+                            '705',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'OCCUPANT DETECTION',
+                            '$756.00',
+                            '706',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Master Switch',
+                            '$750($EC)',
+                            '720',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'C',
+                            'ABS/TRC/VSC',
+                            '$7B0',
+                            '703',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'TDS',
+                            '$750（$E0）',
+                            '721',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'Engine',
+                            '$700/$7DF',
+                            '372',
+                            'O($700)
+*3'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'ECT',
+                            '$701/$7DF',
+                            '373',
+                            'O($701)'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'CCS',
+                            '$700/$7DF',
+                            '374',
+                            'O($700)'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'Stop and Start',
+                            '$726.00',
+                            '392',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'Motor Generator',
+                            '$724/$7E6/$7DF',
+                            '395',
+                            'O($724)'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'Rear Motor Generator',
+                            '$705.00',
+                            '396',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'Hybrid Control',
+                            '$7D2/$7E2/$7DF',
+                            '397',
+                            'O($7D2)'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'HV Battery',
+                            '$747/$7E3/$7DF',
+                            '398',
+                            'O($747)'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'CCS(HV)',
+                            '$7D2/$7E2/$7DF',
+                            '399',
+                            'O($7D2)'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'Plug-in Control',
+                            '$745/$7E7/$7DF',
+                            '400',
+                            'O($745)'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'DC Quick Charging Control',
+                            '$707.00',
+                            '401',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'Solar Charging Control',
+                            '$703.00',
+                            '402',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Tilt&Telescopic',
+                            '$750($A8)',
+                            '406',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Head Up Display',
+                            '$750($69)',
+                            '408',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Meter',
+                            '$7C0',
+                            '409',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Active Noise Control',
+                            '$750($AE)',
+                            '415',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'Powertrain Control Module',
+                            '$7E0/$7E0/$7DF',
+                            '851',
+                            'O($7E0)'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'P',
+                            'Transmission Control Module',
+                            '$7E1/$7E1/$7DF',
+                            '852',
+                            'O($7E1)'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Instrument Cluster',
+                            '$720.00',
+                            '853',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Restraint Control Module',
+                            '$737.00',
+                            '854',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Smart Start Unit',
+                            '$731.00',
+                            '855',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Body Control Module',
+                            '$726.00',
+                            '856',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'C',
+                            'Anti-Lock Brake / Traction Control Module',
+                            '$760.00',
+                            '857',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'C',
+                            'Electronic-Controlled Power Steering',
+                            '$730.00',
+                            '858',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Auto Leveling Module',
+                            '$734.00',
+                            '859',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Smart City Brake Support',
+                            '$793.00',
+                            '860',
+                            'O'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Connectivity Master Unit',
+                            '$784.00',
+                            '861',
+                            '-'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Electric Supply Unit',
+                            '$7B7',
+                            '862',
+                            '-'
+                        );
+
+INSERT INTO ecu_address (
+                            Classification,
+                            [Name of System],
+                            Address,
+                            ECU_ID,
+                            [Data Monitor Function]
+                        )
+                        VALUES (
+                            'B',
+                            'Electronic Air Temperature Controller',
+                            '$733.00',
+                            '863',
+                            'O'
+                        );
+
+
+
+DROP INDEX IF EXISTS idx_ecu_id;
+
+CREATE INDEX idx_ecu_id ON ecu_address (
+    ECU_ID
+);
+
+COMMIT

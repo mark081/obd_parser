@@ -1,0 +1,624 @@
+{
+  // Command Map
+  "commandMap": {
+    "Battery level (Voltage)": {
+      "ford": {
+        "value": [
+          "Battery Positive Voltage"
+        ]
+      },
+      "mazda": {
+        "value": [
+          "Battery Positive Voltage"
+        ]
+      },
+      "toyota": {
+        "value": [
+          "Battery Voltage"
+        ]
+      },
+      "jaguar": {
+        "value": [
+          "Battery voltage"
+        ]
+      }
+    },
+    "Door is ajar": {
+      "ford": {
+        "value": [
+          "Driver Door Ajar Switch Status"
+        ]
+      },
+      "ford": {
+        "value": [
+          "Drivers Door Ajar Switch Status"
+        ]
+      },
+      "mazda": {
+        "value": [
+          "Driver Door Ajar Switch Status"
+        ]
+      },
+      "toyota": {
+        "value": [
+          "Driver Side Door"
+        ]
+      }
+    },
+    "Airbag has Deployed": {
+      "ford": {
+        "value": [
+          "Driver air bag"
+        ]
+      }
+    },
+    "Driver seat belt on": {
+      "toyota": {
+        "value": [
+          "Driver Buckle SW"
+        ]
+      },
+      "ford": {
+        "value": [
+          "Drivers Seatbelt Sensor State",
+          "Driver Beltminder Status"
+        ]
+      },
+      "mazda": {
+        "value": [
+          "Driver Seatbelt Sensor Status"
+        ]
+      }
+    },
+    "Passenger seat belt on": {
+      "toyota": {
+        "value": [
+          "P-Seatbelt Buckle SW"
+        ]
+      },
+      "ford": {
+        "value": [
+          "Passenger Seatbelt Sensor Status"
+        ]
+      },
+      "mazda": {
+        "value": [
+          "Passenger Seatbelt Sensor Status"
+        ]
+      }
+    },
+    "2nd-Row Seatbelt Buckle (R)": {
+      "toyota": {
+        "value": [
+          "2nd-Row Seatbelt Buckle (R)"
+        ]
+      },
+      "ford": {
+        "value": [
+          "Second Row Passenger Seatbelt Sensor Status"
+        ]
+      },
+      "mazda": {
+        "value": [
+          "Second Row Right Seatbelt Sensor State"
+        ]
+      }
+    },
+    "2nd-Row Seatbelt Buckle (L)": {
+      "toyota": {
+        "value": [
+          "2nd-Row Seatbelt Buckle (L)"
+        ]
+      },
+      "ford": {
+        "value": [
+          "Second Row Passenger Seatbelt Sensor Status"
+        ]
+      },
+      "mazda": {
+        "value": [
+          "Second Row Left Seatbelt Sensor State"
+        ]
+      }
+    },
+    "2nd-Row Seatbelt Buckle (C)": {
+      "toyota": {
+        "value": [
+          "2nd-Row Seatbelt Buckle (C)"
+        ]
+      },
+      "ford": {
+        "value": [
+          "Second Row Passenger Seatbelt Sensor Status"
+        ]
+      },
+      "mazda": {
+        "value": [
+          "Second Row Center Seatbelt Sensor State"
+        ]
+      }
+
+    },
+    "3rd-Row Seatbelt Buckle (R)": {
+      "toyota": {
+        "value": [
+          "3rd-Row Seatbelt Buckle (R)"
+        ]
+      },
+      "ford": {
+        "value": [
+          "Third Row Passenger Seatbelt Sensor Status"
+        ]
+      },
+      "mazda": {
+        "value": [
+          "Third Row Right Seatbelt Sensor State"
+        ]
+      }
+    },
+    "3rd-Row Seatbelt Buckle (L)": {
+      "toyota": {
+        "value": [
+          "3rd-Row Seatbelt Buckle (L)"
+        ]
+      },
+      "ford": {
+        "value": [
+          "Third Row Passenger Seatbelt Sensor Status"
+        ]
+      },
+      "mazda": {
+        "value": [
+          "Third Row Left Seatbelt Sensor State"
+        ]
+      }
+    },
+    "3rd-Row Seatbelt Buckle (C)": {
+      "toyota": {
+        "value": [
+          "3rd-Row Seatbelt Buckle (C)"
+        ]
+      },
+      "ford": {
+        "value": [
+          "Third Row Passenger Seatbelt Sensor Status"
+        ]
+      },
+      "mazda": {
+        "value": [
+          "Third Row Center Seatbelt Sensor State"
+        ]
+      }
+    },
+    "Brake applied": {
+      "toyota": {
+        "value": [
+          "Brake Negative Pressure"
+        ]
+      },
+      "ford": {
+        "value": [
+          "Brake Pedal Position"
+        ]
+      },
+      "mazda": {
+        "value": [
+          "Brake Pedal Position"
+        ]
+      }
+    },
+    "Brake pressure": {
+      "toyota": {
+        "value": [
+          "Brake Negative Pressure"
+        ]
+      },
+      "ford": {
+        "value": [
+          "%%h(ABS) Main Brake Pressure"
+        ]
+      },
+      "ford": {
+        "value": [
+          "Brake Pressure Applied"
+        ]
+      },
+      "mazda": {
+        "value": [
+          "%%h(ABS) Main Brake Pressure"
+        ]
+      }
+    },
+    "Vehicle is idling": {
+      "toyota": {
+        "value": [
+          "Target Idle Engine Speed"
+        ]
+      },
+      "ford": {
+        "value": [
+          "Desired Idle Speed %%h(RPM)"
+        ]
+      },
+      "mazda": {
+        "value": [
+          "Desired Idle Speed %%h(RPM)"
+        ]
+      }
+    },
+    "Gear Shift position": {
+      "toyota": {
+        "value": [
+          "Shift Lever Position"
+        ]
+      },
+      "ford": {
+        "value": [
+          "%Gear Commanded"
+        ]
+      },
+      "mazda": {
+        "value": [
+          "%Gear Commanded"
+        ]
+      }
+    },
+    "Headlight": {
+      "toyota": {
+        "value": [
+          "Headlight Low Beam State"
+        ]
+      },
+      "ford": {
+        "value": [
+          "Headlamp Status"
+        ]
+      },
+      "ford": {
+        "value": [
+          "Headlight Switch Mode"
+        ]
+      },
+      "mazda": {
+        "value": [
+          "Headlamp Status"
+        ]
+      }
+    },
+    "MPG": {
+      "toyota": {
+        "value": [
+          "Fuel Consumption"
+        ]
+      }
+    },
+    "Steering wheel rotation (angle)": {
+      "toyota": {
+        "value": [
+          "Steering Angle"
+        ]
+      },
+      "ford": {
+        "value": [
+          "%%h(ABS) Steering Wheel Angle"
+        ]
+      },
+      "ford": {
+        "value": [
+          "Steering Wheel Angle"
+        ]
+      },
+      "mazda": {
+        "value": [
+          "steering wheel angle"
+        ]
+      }
+    },
+    "Turn Signal Switch (Left)": {
+      "toyota": {
+        "value": [
+          "Turn Signal Switch (Left)"
+        ]
+      },
+      "ford": {
+        "value": [
+          "Left Front Turn Signal Lamp Status"
+        ]
+      },
+      "mazda": {
+        "value": [
+          "Left Turn signal Switch Status"
+        ]
+      }
+    },
+    "Turn Signal Switch (Right)": {
+      "toyota": {
+        "value": [
+          "Turn Signal Switch (Right)"
+        ]
+      },
+      "ford": {
+        "value": [
+          "Right Front Turn Signal Lamp Status"
+        ]
+      },
+      "mazda": {
+        "value": [
+          "Right Turn signal Switch Status"
+        ]
+      }
+    },
+    "Vehicle state (Engine On/OFF)": {
+      "toyota": {
+        "value": [
+          "Engine Speed"
+        ]
+      },
+      "ford": {
+        "value": [
+          "%%h(RPM)"
+        ]
+      },
+      "ford": {
+        "value": [
+          "Engine_RPM"
+        ]
+      },
+      "mazda": {
+        "value": [
+          "%%h(RPM)"
+        ]
+      }
+
+    },
+    "Windshield wiper status (front)": {
+      "toyota": {
+        "value": [
+          "Front Wiper Switch"
+        ]
+      },
+      "toyota": {
+        "value": [
+          "Wiper Information"
+        ]
+      },
+      "ford": {
+        "value": [
+          "Windshield wiper status"
+        ]
+      },
+      "ford": {
+        "value": [
+          "Front Wiper Command Low Speed "
+        ]
+      },
+      "mazda": {
+        "value": [
+          "Front Wiper Switch"
+        ]
+      }
+    },
+    "Yaw rate": {
+      "toyota": {
+        "value": [
+          "Yaw Rate Value"
+        ]
+      },
+      "ford": {
+        "value": [
+          "%%h(ABS) Yaw Rate Value"
+        ]
+      },
+      "mazda": {
+        "value": [
+          "%%h(ABS) Yaw Rate Value"
+        ]
+      }
+    },
+    "Speed of FL Wheel": {
+      "toyota": {
+        "value": [
+          "FL Wheel Speed"
+        ]
+      },
+      "ford": {
+        "value": [
+          "%Left Front Wheel Speed%"
+        ]
+      },
+      "mazda": {
+        "value": [
+          "%Left Front Wheel Speed%"
+        ]
+      }
+    },
+    "Speed of FR Wheel": {
+      "toyota": {
+        "value": [
+          "FR Wheel Speed"
+        ]
+      },
+      "ford": {
+        "value": [
+          "%Right Front Wheel Speed%"
+        ]
+      },
+      "mazda": {
+        "value": [
+          "%Right Front Wheel Speed%"
+        ]
+      }
+    },
+    "Speed of RR Wheel": {
+      "toyota": {
+        "value": [
+          "RR Wheel Speed"
+        ]
+      },
+      "ford": {
+        "value": [
+          "%Left Rear Wheel Speed%"
+        ]
+      },
+      "mazda": {
+        "value": [
+          "%Left Rear Wheel Speed%"
+        ]
+      }
+    },
+    "Speed of RL Wheel": {
+      "toyota": {
+        "value": [
+          "RL Wheel Speed"
+        ]
+      },
+      "ford": {
+        "value": [
+          "%Right Rear Wheel Speed%"
+        ]
+      },
+      "mazda": {
+        "value": [
+          "%Right Rear Wheel Speed%"
+        ]
+      }
+    },
+    "Model Code": {
+      "ford": {
+        "value": [
+          "%Occupant Classification System Model Year Calibration Identification%"
+        ]
+      }
+     },
+    "Transmission Gear": {
+      "ford": {
+        "value": [
+          "%Transmission Gear Engaged%"
+        ]
+      }
+    },
+    "Accelerator Pedal Position": {
+      "ford": {
+        "value": [
+          "%Accelerator Pedal Position%"
+        ]
+      }
+    },
+    "Ambient Temperature": {
+      "ford": {
+        "value": [
+          "Ambient Air Temperature"
+        ]
+      }
+    },
+    "Fog Lights": {
+      "ford": {
+        "value": [
+          "Front Fog Light Switch"
+        ]
+      },
+      "ford": {
+        "value": [
+          "Front Fog Lamp Indicator"
+        ]
+      }
+    },
+    "Vehicle Speed": {
+      "ford": {
+        "value": [
+          "%Vehicle Speed%"
+        ]
+      }
+    },
+    "AC Compressor": {
+      "ford": {
+        "value": [
+          "Air Conditioning Compressor Commanded State"
+        ]
+      }
+    },
+    "Trunk Open": {
+      "ford": {
+        "value": [
+          "Trunk/Liftgate Key Cylinder Switch"
+        ]
+      },
+      "ford": {
+        "value": [
+          "Trunk/Liftgate Release Output"
+        ]
+      }
+    },
+    "Hood Open": {
+      "ford": {
+        "value": [
+          "Hood Ajar Switch"
+        ]
+      }
+    },
+    "Parking Brake": {
+      "ford": {
+        "value": [
+          "Park Brake Applied Lamp"
+        ]
+      }
+    },
+    "Coolant Temperature": {
+      "ford": {
+        "value": [
+          "Engine coolant temperature"
+        ]
+      }
+    },
+    "Vehicle Load": {
+      "ford": {
+        "value": [
+          "Engine load"
+        ]
+      }
+    },
+    "Interior Lights": {
+      "ford": {
+        "value": [
+          "Ambient Light Level Status"
+        ]
+      },
+      "ford": {
+        "value": [
+          "Interior Lights 1 %%h(PWM) Output"
+        ]
+      }
+    },
+    "Hazard Lights": {
+      "ford": {
+        "value": [
+          "Hazard Switch Signal"
+        ]
+      }
+    },
+    "LF Tire Pressure": {
+      "ford": {
+        "value": [
+          "Left Front Tire Pressure"
+        ]
+      }
+    },
+    "Door Lock/Unlock": {
+      "ford": {
+        "value": [
+          "All Door Unlock"
+        ]
+      }
+    },
+    "Key Position": {
+      "ford": {
+        "value": [
+          "%Ignition Key In / Out%"
+        ]
+      }
+    }
+    }
+  }
+
+
+

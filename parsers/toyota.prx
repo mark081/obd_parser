@@ -1,0 +1,33 @@
+SELECT DISTINCT
+               [ECU Name] ecu,
+                ecu_address.Address,
+                @ID normalized_name,
+                Brand make,
+                [User Selection 1] year,
+                [Model Name] model,
+                Installed_ECU.Protocol protocol,
+                [Item Name] externalID,
+                [Byte Position] byte,
+                [Bit Position] bit,
+                lsb,
+                offset,                
+                [Minimum Value] fromValue,
+                [Maximum Value] toValue,
+                [Number of Decimals] numberOfDecimals,
+                Data_Monitor.Unit unit,
+                '$21' mode,
+                Data_Monitor.PID pid,
+                [Support PID] support_pid,
+                [Byte Length] byte_length
+
+  FROM Installed_ECU
+       INNER JOIN
+       Data_Monitor ON Data_Monitor.[ECU ID] = Installed_ECU.[ECU ID]
+       INNER JOIN
+       Vehicle_Data ON Installed_ECU.[Vehicle ID] = Vehicle_Data.[Vehicle ID]
+       INNER JOIN
+       ecu_address ON Installed_ECU.[ECU ID] = ecu_address.ECU_ID
+       INNER JOIN
+       pid_table on data_monitor."ECU ID" = pid_table."ECU ID" and data_monitor.PID = pid_table.PID
+ WHERE
+       [Item Name] = @extID

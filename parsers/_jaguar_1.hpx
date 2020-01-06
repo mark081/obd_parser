@@ -1,0 +1,106 @@
+BEGIN TRANSACTION;
+
+DROP TABLE IF EXISTS _ETI_Parameters_Master;
+
+CREATE TABLE _ETI_Parameters_Master AS
+SELECT VehicleDerivative AS Model,
+       Null AS Type,
+       Null AS SubType,
+       Year,
+       code,
+       ModuleName,
+       ConverterName,
+       ParamDataName,
+       Description,
+       ParamType,
+       Null AS DecAddress,
+       Address AS HexAddress,
+       [#Bytes],
+       [Bit Mask] AS HexBitMask,
+       Null AS DecBitMask,
+       [Bit Shift]
+FROM _ETI_FF_Parameters;
+
+INSERT INTO _ETI_Parameters_Master
+SELECT VehicleDerivative AS Model,
+       Null AS Type,
+       Null AS SubType,
+       Year,
+       code,
+       ModuleName,
+       ConverterName,
+       Null AS ParamDataName,
+       Description,
+       ParamType,
+       Null AS DecAddress,
+       Address AS HexAddress,
+       [#Bytes],
+       [Bit Mask] AS HexBitMask,
+       Null AS DecBitMask,
+       [Bit Shift]
+FROM _ETI_Parameters;
+
+INSERT INTO _ETI_Parameters_Master
+SELECT VehicleDerivative AS Model,
+       Null AS Type,
+       Null AS SubType,
+       Year,
+       code,
+       ModuleName,
+       ConverterName,
+       Null AS ParamDataName,
+       Description,
+       ParamType,
+       Null AS DecAddress,
+       Address AS HexAddress,
+       [#Bytes],
+       [Bit Mask] AS HexBitMask,
+       Null AS DecBitMask,
+       [Bit Shift]
+FROM [_ETI_Parameters safe];
+
+INSERT INTO _ETI_Parameters_Master
+SELECT Model,
+       Type,
+       SubType,
+       Year,
+       code,
+       ModuleName,
+       ConverterName,
+       Null as ParamDataName,
+       message AS Description,
+       ParamType,
+       ParamAddr AS DecAddress,
+       Null AS HexAddress,
+       [#Bytes],
+       Null AS HexBitMask,
+       BitMask AS DecBitMask,
+       BitShift
+FROM [_ETI_Parameters RDS Input];
+
+CREATE INDEX idx_param_id ON  _ETI_Parameters_Master (
+    Model
+);
+
+
+DROP TABLE IF EXISTS _ETI_Converters_Master;
+
+CREATE TABLE _ETI_Converters_Master AS
+SELECT * FROM _ETI_Converters;
+
+INSERT INTO _ETI_Converters_Master
+SELECT ConverterName,
+       [Offset],
+       Multiplier,
+       Divisor,
+       QuantityType,
+       FromValue,
+       ToValue,
+       StateLow,
+       StateHigh,
+       message AS [State Description]
+FROM [_ETI_Converters RDS Input];
+
+CREATE INDEX idx_converter_name ON _ETI_Converters_Master(ConverterName);
+
+COMMIT

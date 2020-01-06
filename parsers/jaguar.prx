@@ -1,0 +1,7 @@
+SELECT DISTINCT @ID normalized_name,'JAGUAR-LAND ROVER' AS Make, Model, Year, Description, DecAddress, HexAddress, [#Bytes], HexBitMask, DecBitMask, [Bit Shift],
+QuantityType, Offset, Multiplier, Divisor, FromValue, ToValue, StateLow, StateHigh, [State Description]  FROM _ETI_Parameters_Master
+INNER JOIN _ETI_Converters_Master ON
+_ETI_Parameters_Master.ConverterName = _ETI_Converters_Master.ConverterName
+WHERE Description = @extID
+
+
